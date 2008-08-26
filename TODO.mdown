@@ -1,0 +1,3 @@
+* WAV files for "3, 2, 1" and "GO GO GO!", etc
+* Bigger fonts on the round
+* A clock type display (with wedges colored for the work/break)
