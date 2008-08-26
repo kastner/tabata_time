@@ -168,6 +168,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Erik Kastner";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -175,6 +176,7 @@
 				GCC_PREFIX_HEADER = TabataTime_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = TabataTime;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A4010BED-3F34-42DB-8F8E-0B28EB011B05";
 			};
 			name = Debug;
 		};
@@ -200,6 +202,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FF7D3FE0-5456-472A-B04D-7519C9F664AC";
 				SDKROOT = iphoneos2.0;
 			};
 			name = Debug;

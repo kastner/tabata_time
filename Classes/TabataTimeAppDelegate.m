@@ -25,6 +25,7 @@
 		[button setTitle:@"Start" forState:UIControlStateNormal];
 		going = NO;
 		[label setText:@""];
+		[roundLabel setText:@""];
 	}
 }
 
@@ -54,6 +55,14 @@
 		float startOfRound = (round - 1) * roundLength;
 		float startOfNextRound = round * roundLength;
 		float startOfBreak = startOfNextRound - offFor;
+		
+		if (seconds > startOfRound && seconds <= startOfRound + offwin) {
+			AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+		}
+
+		if (seconds > startOfBreak && seconds <= startOfBreak + offwin) {
+			AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+		}
 		
 		if (seconds >= startOfRound && seconds < startOfBreak) {
 			[label setText:[NSString stringWithFormat:@"Go Go Go!\n%0.0f", (startOfBreak - seconds)]];
